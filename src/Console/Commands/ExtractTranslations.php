@@ -41,7 +41,7 @@ class ExtractTranslations extends Command
             return $files;
         });
 
-        $pattern = '/(?:__|@lang)\(\s*(["\'])(.*?)\1\s*[\),]/m';
+        $pattern = config('laravel-blade-translations-extractor.pattern');
 
         $found = [];
 

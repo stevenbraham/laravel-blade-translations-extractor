@@ -13,7 +13,15 @@ class ExtractTranslationsServiceProvider extends ServiceProvider
             $this->commands([
                 ExtractTranslations::class,
             ]);
+
+            $this->publishes([
+                __DIR__ . '/../../config/laravel-blade-translations-extractor.php' => config_path('laravel-blade-translations-extractor.php'),
+            ], 'extract-translations-config');
         }
+
+        $this->mergeConfigFrom(
+            __DIR__ . '/../../config/laravel-blade-translations-extractor.php',
+            'laravel-blade-translations-extractor'
+        );
     }
 }
-
