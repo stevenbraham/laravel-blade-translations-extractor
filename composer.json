@@ -18,6 +18,13 @@
         "php": "^8.0",
         "laravel/framework": "^8.0|^9.0|^10.0|^11.0|^12.0"
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "StevenBraham\\LaravelBladeTranslationsExtractor\\Providers\\ExtractTranslationsServiceProvider"
+            ]
+        }
+    },
     "minimum-stability": "dev",
     "prefer-stable": true
 }
