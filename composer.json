@@ -1,0 +1,19 @@
+{
+    "name": "stevenbraham/laravel-blade-translations-extractor",
+    "description": "Laravel package for auto extracting strings from __ and @lang tags in Blade to JSON.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "StevenBraham\\LaravelBladeTranslationsExtractor\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Steven Braham",
+            "email": "steven@braham.biz"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
